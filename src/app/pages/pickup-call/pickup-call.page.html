@@ -1,6 +1,6 @@
 <ion-header>
   <ion-toolbar color="success">
-    <ion-buttons>
+    <ion-buttons slot="start">
       <ion-back-button text=""></ion-back-button>
     </ion-buttons>
     <ion-title>Pickup Call</ion-title>
@@ -28,5 +28,5 @@
     </ion-item>
   </ion-list>
 
-  <ion-button color="success" size="full">Create Pickup Call</ion-button>
+  <ion-button color="success" size="full" (click)="newPickupCall()">Create Pickup Call</ion-button>
 </ion-content>
