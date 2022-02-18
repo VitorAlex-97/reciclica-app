@@ -11,14 +11,14 @@ import { PickupCallCardComponent } from 'src/app/components/pickup-call-card/pic
 
 @NgModule({
   imports: [
+    PickupCallPageRoutingModule,
     CommonModule,
     FormsModule,
-    IonicModule,
-    PickupCallPageRoutingModule
+    IonicModule
   ],
   declarations: [
-    PickupCallPage,
-    PickupCallCardComponent
+    PickupCallCardComponent,
+    PickupCallPage
   ]
 })
 export class PickupCallPageModule {}
