@@ -43,7 +43,7 @@ function matchPasswordAndRepeatPassword(form: FormGroup) : ValidatorFn {
     const repeatPassword = form.get('repeatPassword');
 
     const validator = () => {
-        return password == repeatPassword ? null : {isntMatch: true};
+        return password.value == repeatPassword.value ? null : {isntMatch: true};
     }
 
     return validator;
